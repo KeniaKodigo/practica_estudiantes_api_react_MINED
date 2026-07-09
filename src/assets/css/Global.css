@@ -1,0 +1,62 @@
+/* ==========================================================================
+   estilos-globales.css
+   Variables de diseño compartidas por toda la app.
+   Importa este archivo UNA VEZ en tu index.js o App.jsx:
+   import './estilos-globales.css'
+   ========================================================================== */
+
+:root {
+  /* Colores principales */
+  --color-navy: #16274d;       /* Azul marino (marca, botones primarios, títulos) */
+  --color-navy-dark: #0f1c38;  /* Hover de botones primarios */
+  --color-bg: #eef1f8;         /* Fondo general de la app */
+  --color-white: #ffffff;
+  --color-border: #e2e6f0;
+  --color-border-soft: #edf0f7;
+
+  /* Texto */
+  --color-text-primary: #16274d;
+  --color-text-secondary: #6b7280;
+  --color-text-muted: #9aa3b2;
+
+  /* Estados / acentos */
+  --color-accent-blue: #dbe7fb;
+  --color-accent-green: #b9f0d1;
+  --color-accent-gray: #e2e5eb;
+  --color-error: #e0432c;
+
+  /* Tipografía */
+  --font-base: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+
+  /* Radios y sombras */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --shadow-card: 0 1px 3px rgba(22, 39, 77, 0.06), 0 8px 24px rgba(22, 39, 77, 0.04);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-base);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
