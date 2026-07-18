@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router";
 import ListaEstudiantes from "./ListaEstudiantes";
 import RegistroEstudiante from "./RegistroEstudiante";
 import Bienvenido from "./Bienvenido";
+import DetalleEstudiante from "./DetalleEstudiante";
 
 export default function Navbar() {
     return (
@@ -34,6 +35,8 @@ export default function Navbar() {
                 <Route path="/" element={<ListaEstudiantes />} />
                 <Route path="/estudiantes/registro" element={<RegistroEstudiante />} />
                 <Route path="/bienvenido" element={<Bienvenido />} />
+                {/** creando una ruta parametrizada */}
+                <Route path="/estudiantes/detalle/:estudianteId" element={<DetalleEstudiante />} />
             </Routes>
         </BrowserRouter>
     )
