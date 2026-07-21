@@ -24,3 +24,11 @@ export const getStudentById = async (studentID) => {
     const respuesta = await axios.get(`https://expressapiestudiantes-production.up.railway.app/api/estudiantes/${studentID}`)
     return respuesta.data
 }
+
+// metodo para registrar un estudiante
+// el "objetoEstudiante" tiene que mandar un objeto con la info del estudiante (nombre, edad, correo)
+export const saveStudent = async (objetoEstudiante) => {
+    const respuesta = await axios.post("https://expressapiestudiantes-production.up.railway.app/api/estudiantes", objetoEstudiante)
+    return respuesta.data
+}
+
