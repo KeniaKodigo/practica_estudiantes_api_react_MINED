@@ -32,3 +32,9 @@ export const saveStudent = async (objetoEstudiante) => {
     return respuesta.data
 }
 
+// METODO A UTILIZAR PARA LA TAREA
+export const updateEmail = async (studentID, correo) => {
+    const respuesta = await axios.patch(`https://expressapiestudiantes-production.up.railway.app/api/estudiantes/${studentID}`, correo)
+    return respuesta.data
+}
+
